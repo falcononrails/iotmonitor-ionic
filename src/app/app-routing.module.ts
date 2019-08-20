@@ -10,10 +10,6 @@ const routes: Routes = [
   },
   { path: "home", loadChildren: "./home/home.module#HomePageModule" },
   {
-    path: "setting",
-    loadChildren: "./setting/setting.module#SettingPageModule"
-  },
-  {
     path: "add-topic",
     loadChildren: "./add-topic/add-topic.module#AddTopicPageModule"
   },
