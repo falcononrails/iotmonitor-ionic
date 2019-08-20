@@ -1,0 +1,60 @@
+ion-menu {
+    --ion-background-color: #f7e0e0;
+    --ion-text-color: #a73333;
+  
+    ion-toolbar {
+      --background: #f7e0e0;
+    }
+  
+    ion-list {/* optional, but it needs when you use gradient as a background color.*/
+      background: transparent;
+    }
+  }
+
+  ion-toolbar {
+    --background: #f7e0e0;
+  }
+
+  ion-title {
+      --color: #a73333 ;
+  }
+
+ion-icon{
+      color: #a73333;
+  }
+
+ion-item {
+    --border-color: #ffffff;
+    --transition: background-color 15ms linear;
+}
+
+ion-list {
+    padding: 0px;
+}
+
+ ion-item {
+     --inner-padding-end: 0px;
+     --inner-padding-start: 0px;
+     --transition: background-color 15ms linear;
+ }
+ 
+ ion-card {
+     margin-top: 16px;
+     ion-list{
+         ion-item {
+             
+             --highlight-height: 32px;
+             --min-height: 24px;
+             --transition: background-color 15ms linear;
+             ion-label {
+                 font-size: 12px;
+                --color:  #a73333;
+                margin :0px;
+            }
+         }
+     }
+ }
+
+ ion-card-title {
+     --color:  #a73333;
+ }

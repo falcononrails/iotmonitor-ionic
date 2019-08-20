@@ -1,0 +1,54 @@
+<ion-content>
+
+  <ion-toolbar>
+    <ion-button fill ="clear" slot="start" (click)="openFirst()" >
+        <ion-icon slot="icon-only" name="menu" id="menu-icon"></ion-icon>
+      </ion-button>
+    <ion-title >Home</ion-title>
+    <ion-button fill ="clear" slot="end" routerLink='/add-topic' routerDirection="forward" >
+      <ion-icon slot="icon-only" name="add"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+  <ion-menu  side="start"  menuId="first" >
+            <ion-toolbar >
+              <ion-list>  
+              <ion-item >
+                  <ion-title >Menu</ion-title>
+              </ion-item> 
+            </ion-list>
+            </ion-toolbar>
+        <ion-content>
+          <ion-list>
+            <ion-item routerLink='/home' routerDirection="root" (click)="toggleMenu()">
+              <ion-icon slot="start" name="home" ></ion-icon>
+              Home</ion-item>
+            <ion-item    (click)="logOut()" >
+              <ion-icon slot="start" name="log-out" ></ion-icon>
+              Logout</ion-item>
+          </ion-list>
+        </ion-content>
+      </ion-menu>  
+       
+      <ion-router-outlet main></ion-router-outlet>
+      <ion-list *ngFor="let topic of topics">
+          <ion-card>
+              <ion-list>
+                <ion-item >
+                    <ion-card-title>Topic : {{topic.topic}}</ion-card-title>
+                    <ion-button fill ="clear" slot="end" (click)="showGraph(topic)" >
+                      <ion-icon slot="icon-only" name="stats" id="menu-icon"></ion-icon>
+                    </ion-button>
+                    <ion-button fill ="clear" slot="end" (click)="delete(topic.id)" >
+                        <ion-icon slot="icon-only" name="close" id="menu-icon"></ion-icon>
+                      </ion-button>
+                </ion-item>
+                <ion-item >
+                  <ion-label>Broker : {{topic.URL}} </ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Port : {{topic.port}} </ion-label>
+                </ion-item>
+              </ion-list>
+            </ion-card>  
+      </ion-list>
+</ion-content>

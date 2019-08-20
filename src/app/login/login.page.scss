@@ -1,0 +1,109 @@
+ion-content {
+  --background: url("/../assets/background.png") no-repeat center/cover fixed;
+  --color: #000000;
+  --keyboard-offset: 0px;
+  --offset-bottom: 0px;
+  --offset-top: 0px;
+  --padding-bottom: 0px;
+  --padding-end: 0px;
+  --padding-start: 0px;
+  --padding-top: 0px;
+}
+
+ion-input {
+  --background: #fafafa;
+  --padding-bottom: 4px;
+  --padding-end: 4px;
+  --padding-start: 4px;
+  --padding-top: 4px;
+  --placeholder-color: #a73333;
+  --placeholder-font-style: initial --placeholder-font-weight initial;
+}
+
+ion-card {
+  --background: #f7e0e0;
+}
+
+ion-item {
+  margin: 10px;
+}
+
+ion-icon {
+  color: #a73333;
+}
+
+h1 {
+  color: #a73333;
+  font-size: 36px;
+}
+
+ion-button {
+  --background: #ffffff;
+  --background-activated: #ffffff;
+  --background-focused: #ffffff;
+  --background-hover: #ffffff;
+  --border-color: #f7e0e0;
+  --border-style: solid;
+  --color: #a73333;
+  --color-activated: #a73333;
+  --color-focused: #a73333;
+  --color-hover: #a73333;
+  --opacity: 1;
+  --transition: background-color 15ms linear;
+}
+
+p {
+  font-size: 12px;
+}
+
+#forgot-password {
+  font-size: 12px;
+  text-decoration: none;
+  color: #a73333;
+}
+
+#Password,
+#Email {
+  --background: #fafafa;
+  --border-radius: 8px;
+}
+
+#Password {
+  margin-top: 4px;
+}
+
+#Login {
+  padding-top: 40%;
+  padding-bottom: 16px;
+}
+
+#Link-password {
+  padding: 0px;
+  margin: 0px;
+  margin-right: 10px;
+  text-align: end;
+}
+
+#button-login {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#Link-registration {
+  color: #a73333;
+  text-align: center;
+}
+
+#Register {
+  font-size: 20px;
+  color: #a73333;
+}
+
+#invalid-feedback {
+  background: #f7e0e0;
+  color: #a73333;
+  font-size: 12px;
+  margin: 0px;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}

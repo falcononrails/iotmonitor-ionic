@@ -1,0 +1,43 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3" >
+          <div id="Login">
+              <h1 align="center">IoTMonitor</h1>
+          </div>
+          <form [formGroup] = "logInForm" (ngSubmit)="onSubmit()">
+            <ion-card margin >
+              <ion-item  id="Email" lines = "none" >
+                  <ion-icon  name="mail" slot="start" ></ion-icon>
+                  <ion-input id = "userEmail" formControlName="userEmail" placeholder="Email" type="Email" ></ion-input>
+                </ion-item>
+                <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userEmail.errors?.required">
+                  Field required
+                </div>
+                <div id="Link-password">
+                    <a id="forgot-password" href="#">Forgot password ?</a>
+                </div>
+                <ion-item  id="Password" lines = "none">
+                  <ion-icon name="lock" slot="start"></ion-icon>
+                  <ion-input  formControlName="userPassword" placeholder="Password" type="password" ></ion-input>
+                </ion-item>
+                <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userPassword.errors?.required">
+                    Field required
+                  </div>
+          </ion-card>
+          <div margin id ="button-login">
+            <ion-button  margin type="submit"  fill = "outline" shape="round" expand = "block" >Sign In
+                <ion-icon slot="end" name="log-in"></ion-icon>
+            </ion-button>
+        </div> 
+          </form>
+        <div margin padding id ="Link-registration">
+            <p>Not registred yet ?</p>
+            <a id="Register" href="/register">
+              Register
+            </a>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

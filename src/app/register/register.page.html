@@ -1,0 +1,49 @@
+<ion-content>
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size-md="6" offset-md = "3">
+      <div id="register">
+        <h1 align = "center">Register</h1>
+      </div>
+      <form [formGroup] = "registerForm" (ngSubmit)="onSubmit()">
+          <ion-card margin>
+              <ion-item  id="input" lines = "none" >
+                    <ion-icon name="person" slot="start"></ion-icon>
+                    <ion-input placeholder="User" formControlName="userName" type="text" ></ion-input>
+              </ion-item>
+              <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userName.errors?.required">
+                  Field required
+                </div>
+                <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userName.errors?. minlength">
+                    Username too short !
+                  </div>
+              <ion-item  id="input" lines = "none" >
+                  <ion-icon  name="mail" slot="start" ></ion-icon>
+                  <ion-input formControlName="userEmail" placeholder="Email" type="Email" ></ion-input>
+              </ion-item>
+              <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userEmail.errors?.required">
+                  Field required
+                </div>
+                <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userEmail.errors?.emailInvalid">
+                  This is not an email!
+                </div>
+              <ion-item  id="input" lines = "none" >
+                  <ion-icon  name="lock" slot="start" ></ion-icon>
+                  <ion-input formControlName="userPassword" placeholder="Password" type="Password" ></ion-input>
+              </ion-item>
+              <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userPassword.errors?.required">
+                  Field required
+                </div>
+                <div id = "invalid-feedback" [hidden] = "!submitted" lines = "none" *ngIf="getControls.userPassword.errors?.minlength">
+                    Password too short !
+                  </div>
+            </ion-card>
+            <div margin id ="button-login">
+                <ion-button  type = "submit" fill = "outline" shape="round" expand = "block" >Create account
+                </ion-button>
+            </div>
+      </form>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

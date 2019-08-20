@@ -1,0 +1,75 @@
+ion-menu {
+    --ion-background-color: #f7e0e0;
+    --ion-text-color: #a73333;
+  
+    ion-toolbar {
+      --background: #f7e0e0;
+    }
+  
+    ion-list {/* optional, but it needs when you use gradient as a background color.*/
+      background: transparent;
+    }
+  }
+
+  ion-toolbar {
+    --background: #f7e0e0;
+  }
+
+  ion-title {
+      --color: #a73333 ;
+  }
+
+ion-icon{
+      color: #a73333;
+  }
+
+ion-input {
+    --background: #fafafa;
+    --padding-bottom: 4px;
+    --padding-end: 4px;
+    --padding-start: 4px;
+    --padding-top: 4px;
+    --placeholder-color: #a73333;
+    --placeholder-font-style: initial
+    --placeholder-font-weight initial
+}
+
+
+ion-item {
+    margin: 10px;
+}
+
+ion-icon {
+    color: #a73333;
+}
+
+h1 {
+    color: #a73333;
+    font-size: 36px;
+}
+
+ ion-button {
+    --background: #ffffff;
+    --background-activated: #ffffff;
+    --background-focused: #ffffff;
+    --background-hover: #ffffff;
+    --border-color: #f7e0e0;
+    --border-style: solid;
+    --color:#a73333;
+    --color-activated: #a73333;
+    --color-focused: #a73333;
+    --color-hover: #a73333;
+    --opacity: 1;
+    --transition: background-color 15ms linear;
+ }
+
+ p{
+    font-size: 12px;
+ }
+
+
+
+
+#menu-icon{
+    --background :  #f7e0e0;
+}
