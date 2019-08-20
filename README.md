@@ -16,8 +16,7 @@ This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging
 After signing up and signing in, a typical scenario is as follows: 
 - Create an account in [CloudMQTT](https://www.cloudmqtt.com)
 - Set up an instance
-- Add the server, username, password and port from your Cloud MQTT instance and save.
-Example: 
+- Add the server, username, password and port from your Cloud MQTT instance and save.  
 ![Adding a broker](./add_broker.png)
 - You can now click on the graph icon to display your live data.
 
