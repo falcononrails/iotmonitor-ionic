@@ -8,7 +8,7 @@ This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging
 - Monitor your live sensor data
 
 ## Setting up
-- Clone the repo & navigate to it `git clone https://github.com/falcononrails/iotmonitor-ionic.git && cd iot-monitor-ionic` 
+- Clone the repo & navigate to it `git clone https://github.com/falcononrails/iotmonitor-ionic.git && cd iotmonitor-ionic` 
 - Install all dependencies `npm install`
 - Run the app `ionic serve`
 
