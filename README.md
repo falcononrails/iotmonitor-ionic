@@ -1,5 +1,7 @@
 ## About
-This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging MQTT.
+This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging MQTT.  
+
+![App interfaces](./Overview.png)
 
 ## Features
 - Authentication using JWT
