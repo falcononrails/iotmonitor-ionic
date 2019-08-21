@@ -20,7 +20,8 @@ After signing up and signing in, a typical scenario is as follows:
 - Set up an instance
 - Add the server, username, password and port (it should support websockets) from your Cloud MQTT instance and save.  
 ![Adding a broker](./add_broker.png)
-- You can now click on the graph icon to display your live data.
+- You can now use the CloudMQTT Websockets UI to send data & click on the graph icon to display your live data.
+- In order to display data from a sensor, subscribe to the same topic as in the app, connect your sensor to CloudMQTT, and bingo!
 
 
 
