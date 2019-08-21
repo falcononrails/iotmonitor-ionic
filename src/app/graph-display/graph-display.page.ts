@@ -15,19 +15,19 @@ export class GraphDisplayPage implements OnInit {
   URL: any;
   username: any;
   password: any;
-  constructor(private route: ActivatedRoute, private router: Router) {
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
+  ngOnInit() {
     this.route.queryParams.subscribe(params => {
       if (this.router.getCurrentNavigation().extras.state) {
         this.topicName = this.router.getCurrentNavigation().extras.state.topicName;
-        this.username = this.router.getCurrentNavigation().extras.state.userName;
+        this.username = this.router.getCurrentNavigation().extras.state.username;
         this.URL = this.router.getCurrentNavigation().extras.state.URL;
         this.password = this.router.getCurrentNavigation().extras.state.password;
         this.port = this.router.getCurrentNavigation().extras.state.port;
       }
     });
   }
-
-  ngOnInit() {}
 
   ionViewDidEnter() {
     this.plotDynamicSplineChart(
@@ -59,16 +59,13 @@ export class GraphDisplayPage implements OnInit {
             client = new Paho.MQTT.Client(
               mqttbroker,
               Number(port),
-              "mqtt_client" +
-                Math.random()
-                  .toString(16)
-                  .substr(2, 8)
+              "clientId-vlksmlge"
             );
             client.onMessageArrived = onMessageArrived.bind(this);
             client.onConnectionLost = onConnectionLost.bind(this);
             client.connect(options);
             function onConnect() {
-              console.log("onConnect");
+              console.log("onConnect to " + topic);
               client.subscribe(topic);
             }
 
@@ -99,7 +96,7 @@ export class GraphDisplayPage implements OnInit {
       },
 
       title: {
-        text: "Live Sensor Data"
+        text: ""
       },
       xAxis: {
         type: "datetime",
