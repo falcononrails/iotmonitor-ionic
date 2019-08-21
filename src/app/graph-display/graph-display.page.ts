@@ -59,7 +59,10 @@ export class GraphDisplayPage implements OnInit {
             client = new Paho.MQTT.Client(
               mqttbroker,
               Number(port),
-              "clientId-vlksmlge"
+              "pahomqtt_" +
+                Math.random()
+                  .toString(16)
+                  .substr(2, 8)
             );
             client.onMessageArrived = onMessageArrived.bind(this);
             client.onConnectionLost = onConnectionLost.bind(this);
@@ -126,7 +129,7 @@ export class GraphDisplayPage implements OnInit {
       },
       series: [
         {
-          name: "Random data",
+          name: "Temperature",
           type: undefined,
           data: (function() {
             // generate an array of random data
