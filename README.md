@@ -3,6 +3,10 @@ This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging
 
 ![App interfaces](./Overview.png)
 
+## Libraries used
+- Eclipse Paho for MQTT support
+- Highcharts for graph diplay
+
 ## Features
 - Authentication using JWT
 - Add different brokers
