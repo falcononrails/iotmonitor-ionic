@@ -4,14 +4,14 @@ This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging
 ![App interfaces](./Overview.png)
 
 ## Libraries used
-- Eclipse Paho for MQTT support
-- Highcharts for graph diplay
+- [Eclipse Paho](https://www.eclipse.org/paho/clients/js/) for MQTT support.
+- [Highcharts](https://www.npmjs.com/package/highcharts) for graph diplay.
 
 ## Features
-- Authentication using JWT
-- Add different brokers
-- Add topics
-- Monitor your live sensor data
+- Authentication using JWT.
+- Adding different brokers.
+- Adding topics.
+- Monitoring your live sensor data.
 
 ## Setting up
 - Clone the repo & navigate to it `git clone https://github.com/falcononrails/iotmonitor-ionic.git && cd iotmonitor-ionic` 
@@ -20,8 +20,8 @@ This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging
 
 ## Usage
 After signing up and signing in, a typical scenario is as follows: 
-- Create an account in [CloudMQTT](https://www.cloudmqtt.com)
-- Set up an instance
+- Create an account in [CloudMQTT](https://www.cloudmqtt.com).
+- Set up an instance.
 - Add the server, username, password and port (it should support websockets) from your Cloud MQTT instance and save.  
 ![Adding a broker](./add_broker.png)
 - You can now use the CloudMQTT Websockets UI to send data & click on the graph icon to display your live data.
