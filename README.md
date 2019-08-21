@@ -17,6 +17,7 @@ This is the front-end of an IoT Monitor built using Ionic/Angular and leveraging
 - Clone the repo & navigate to it `git clone https://github.com/falcononrails/iotmonitor-ionic.git && cd iotmonitor-ionic` 
 - Install all dependencies `npm install`
 - Run the app `ionic serve`
+- This front-end uses a [Node JS hosted back-end](https://iotmonitor-backend.herokuapp.com). In order to specifiy your own backend, change the **backend_url** variable in the files *authentification-service.service.ts* and *topic-manager.service.ts*.
 
 ## Usage
 After signing up and signing in, a typical scenario is as follows: 
